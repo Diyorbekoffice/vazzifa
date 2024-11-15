@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.section{
+    width: 100%;
+    height: 100vh;
+    background-color: #016366;
+    padding: 30px;
+}
+.top{
+    width: 100%;
+    height: 85vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.top .top_item{
+    width: 100%;
+    height: 100%;
+    background-color: #AFE2FF;
+    border-radius: 5px;
+    position: relative;
+
+}
+.top .top_item:nth-child(4){
+    background-color: transparent;
+}
+.top_item .item{
+    width: 17vh;
+    height: 17vh;
+    background-color: #71797C;
+    color: #fff;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 700;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    transition: all 1s;
+}
+.bottom{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 10px 0;
+}
+.bottom_item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bottom_item p{
+    font-size: 22px;
+    color: #fff;
+    font-weight: 700;
+}
+.bottom_item input{
+    transform: scale(1.4);
+}
+.button_list{
+    height: 100%;
+}
+.button_list li{
+    height: 17vh;
+}
+.button_list li{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 10px;
+
+}
+.button_list li button{
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #016366;
+    border: none;
+    box-shadow: inset 3px 3px 5px #058e93,inset -3px -3px 5px #060625;
+}
+.button_list li button:active{
+    box-shadow: inset -3px -3px 5px #058e93,inset 3px 3px 5px #060625;
+}
+.button_list li button i{
+    color: #fff;
+}
